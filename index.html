@@ -12,12 +12,13 @@
     <!-- こっからARの世界。マーカー上になにを展開するかを書く -->
     <a-marker type="pattern" url="obj/pattern-toyoko_logo.patt">
         <!--objファイル: 形　mtlファイル: 表面　mtlなしでは透明になってしまう--->
-        <a-entity 
+        <!--a-entity 
             obj-model="obj: url(obj/Building.obj);
                        mtl: url(obj/Building.mtl)"
             scale="0.02 0.02 0.02"
             rotation="-90 0 0"
-        >
+        -->
+        <a-box></a-box>
         </a-entity>
         <!--scale:サイズ　rotation: 角度 -90??-->
              <a-text value="Cat AR by J" position="0 0.8 0" align="center"></a-text>
