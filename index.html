@@ -1,11 +1,6 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>CG モデルを登場させる</title>
-  </head>
-  <body style="margin:0px; overflow:hidden;">
+  <body>
     <!-- A-Frame ライブラリの読み込み -->
     <script src="https://aframe.io/releases/0.6.1/aframe.min.js"></script>
     <!-- AR.js ライブラリの読み込み -->
@@ -24,24 +19,6 @@
       <a-marker preset="hiro">
         <!-- マーカーの場所に箱を置く（見やすいようにワイヤーフレーム表示） -->
         <a-box position="0 0.5 0" wireframe="true"></a-box>
-      </a-marker>
-
-      <!-- マーカーを登録（プリセットされている「kanji」マーカー） -->
-      <a-marker preset="kanji">
-        <!-- マーカーの場所に OBJ 形式の 3DCG を置く -->
-        <a-obj-model
-          src="#obj"
-          mtl="#mtl"
-          scale="0.005 0.005 0.005"
-          position="0 0.5 0">
-          <a-animation
-            attribute="rotation"
-            to="0 360 0"
-            dur="3000"
-            easing="linear"
-            repeat="indefinite">
-          </a-animation>
-        </a-obj-model>
       </a-marker>
 
       <!-- AR用のカメラを置く -->
